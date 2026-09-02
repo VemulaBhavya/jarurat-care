@@ -4,7 +4,7 @@ A concept-level healthcare support web app for connecting patients, families, vo
 
 ## Links
 
-- GitHub / Drive: Not published yet. Upload this folder to a GitHub repository or Google Drive.
+- GitHub repository: https://github.com/VemulaBhavya/jarurat-care
 - Live hosted link: https://quiet-queijadas-5da934.netlify.app
 - Claim the Netlify site: https://app.netlify.com/drop/quiet-queijadas-5da934/claim
 - Deployment note: This is a temporary Netlify Drop preview and expires after approximately one hour unless claimed in Netlify. It is protected by the temporary password `My-Drop-Site`.
