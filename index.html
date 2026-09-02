@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jarurat Care connects people with practical healthcare support.">
+  <title>Jarurat Care | Support that meets you where you are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Jarurat Care home">
+      <span class="brand-mark">+</span>
+      <span>jarurat <em>care</em></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#support-form">Get support</a>
+      <button class="nav-chat" type="button" data-open-chat>Ask CareGuide <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot"></span> Community-powered healthcare support</p>
+        <h1 id="hero-title">Care feels lighter<br><span>when shared.</span></h1>
+        <p class="hero-text">Tell us what you need. Jarurat Care helps patients, families, and volunteers find the next practical step, together.</p>
+        <a class="primary-link" href="#support-form">Start a support request <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Illustration of two people supporting each other">
+        <div class="sun-shape"></div>
+        <div class="art-note note-one">A little help<br><strong>goes a long way.</strong></div>
+        <div class="art-note note-two">01 / 03</div>
+        <div class="person person-left"><div class="head"></div><div class="body"></div><div class="arm"></div></div>
+        <div class="person person-right"><div class="head"></div><div class="body"></div><div class="arm"></div></div>
+        <div class="ground-line"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Jarurat Care impact">
+      <div><strong>2,480+</strong><span>support requests answered</span></div>
+      <div><strong>340</strong><span>local volunteers ready</span></div>
+      <div><strong>24 hrs</strong><span>typical first response</span></div>
+      <p>Small actions.<br><b>Real difference.</b></p>
+    </section>
+
+    <section class="workflow" id="how-it-works">
+      <div class="section-heading"><p class="eyebrow">A simple place to begin</p><h2>Support, made human.</h2></div>
+      <div class="steps">
+        <article><span>01</span><h3>Share what’s going on</h3><p>A few details help us understand the kind of care or connection you’re looking for.</p></article>
+        <article><span>02</span><h3>We find the right fit</h3><p>Our team or a nearby volunteer reviews your request and identifies a useful next step.</p></article>
+        <article><span>03</span><h3>Move forward together</h3><p>You’ll hear from a real person with clear options, resources, and a little more breathing room.</p></article>
+      </div>
+    </section>
+
+    <section class="support-area" id="support-form">
+      <div class="form-panel">
+        <div class="form-intro"><p class="eyebrow">Start here</p><h2>What kind of support do you need?</h2><p>There’s no wrong answer. We’ll take it from here.</p></div>
+        <form id="support-request">
+          <fieldset><legend>I’m reaching out as a...</legend><div class="choice-grid"><label class="choice"><input type="radio" name="role" value="Patient or family member" checked><span>Patient or family member</span></label><label class="choice"><input type="radio" name="role" value="Volunteer"><span>Volunteer</span></label><label class="choice"><input type="radio" name="role" value="Community partner"><span>Community partner</span></label></div></fieldset>
+          <div class="field-row"><label>Full name<input type="text" name="name" placeholder="e.g. Asha Patel" required></label><label>Email address<input type="email" name="email" placeholder="you@example.com" required></label></div>
+          <label>How can we help?<textarea name="message" rows="4" placeholder="Tell us a little about what you need..." required></textarea></label>
+          <label class="consent"><input type="checkbox" required><span>I’m comfortable being contacted by the Jarurat Care team.</span></label>
+          <button class="submit-button" type="submit">Send my request <span>→</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+      <aside class="careguide-panel" id="careguide" aria-labelledby="careguide-title">
+        <div class="assistant-top"><span class="assistant-icon">✦</span><span>CareGuide AI</span><span class="online"><i></i> Online</span></div>
+        <div class="assistant-body"><p class="eyebrow">Quick answers, anytime</p><h2 id="careguide-title">Not sure where to start?</h2><p>Ask CareGuide about common support options, or let it help you prepare your request.</p><div class="suggestions"><button type="button" data-question="What support can Jarurat Care help with?">What can you help with?</button><button type="button" data-question="How do I become a volunteer?">How do I volunteer?</button><button type="button" data-question="What happens after I submit a request?">What happens next?</button></div><div class="chat-log" id="chat-log"><div class="chat-message bot">Hi, I’m CareGuide. Ask me a question and I’ll point you in the right direction.</div></div><form class="chat-form" id="chat-form"><input id="chat-input" type="text" placeholder="Type a question..." aria-label="Ask CareGuide a question"><button type="submit" aria-label="Send question">↑</button></form></div>
+      </aside>
+    </section>
+  </main>
+  <footer><span>© 2026 Jarurat Care</span><span>Built for kinder next steps.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
